@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 
 const destinationSchema = new mongoose.Schema(
@@ -9,10 +8,22 @@ const destinationSchema = new mongoose.Schema(
       unique: true,
     },
 
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+
     heroImage: {
       type: String,
       required: true,
     },
+
+    gallery: [
+      {
+        type: String,
+      },
+    ],
 
     description: {
       type: String,
@@ -23,10 +34,20 @@ const destinationSchema = new mongoose.Schema(
 
     province: String,
 
+    latitude: Number,
+
+    longitude: Number,
+
     rating: {
       type: Number,
       default: 5,
     },
+
+    duration: String,
+
+    budget: String,
+
+    bestTime: String,
 
     tags: [String],
 
@@ -61,6 +82,14 @@ const destinationSchema = new mongoose.Schema(
         image: String,
         rating: Number,
         price: Number,
+      },
+    ],
+
+    restaurants: [
+      {
+        name: String,
+        cuisine: String,
+        rating: Number,
       },
     ],
   },
