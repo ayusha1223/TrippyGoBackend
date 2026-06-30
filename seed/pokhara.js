@@ -4,7 +4,7 @@ module.exports = {
   slug: "pokhara",
 
   heroImage:
-    "https://images.unsplash.com/photo-1605640840605-14ac1855827b",
+    "https://www.himalayanglacier.com/wp-content/uploads/2021/06/Colorful-boats-in-Fewa-Taal-Pokhara.jpg",
 
   gallery: [
     "https://images.unsplash.com/photo-1605640840605-14ac1855827b",
@@ -42,27 +42,32 @@ module.exports = {
     {
       title: "Boating on Phewa Lake",
       description: "Enjoy boating with Annapurna reflections.",
-      image: ""
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YmcPFPYVwaHjI2UHwiqcOX8b6FkADwifNrkvne5lKWTWNIY5AD1Pls0&s=10"
     },
     {
-      title: "Visit World Peace Pagoda",
-      description: "Beautiful hilltop Buddhist monument.",
-      image: ""
+      title: "Kayaking on Begnas Lake",
+      description: "Enjoy Kayaking in the serene Begnas Lake.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJl3nL_R73_tU8JOZj5CSZl5ZXzxs8HOVyXfcv6ZFMEB4GH_JBZA_KfZk&s=10"
     },
     {
-      title: "Watch Sunrise at Sarangkot",
-      description: "One of Nepal's best sunrise viewpoints.",
-      image: ""
+      title: "Paragliding in Sarangkot",
+      description: "One of Nepal's best sunrise viewpoints with paragliding.",
+      image: "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp"
     },
     {
-      title: "Explore Davis Falls",
-      description: "A unique underground waterfall.",
-      image: ""
+      title: "Canyoning in Pokhara",
+      description: "Experience the thrill of canyoning in Pokhara's rivers and waterfalls.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicjz_qFADncF9lQ-khJFAK8hU_QQWRhCjC8wi8R8AHclMnerAUMhTHTTz&s=10"
     },
     {
-      title: "Visit Mahendra Cave",
-      description: "Popular limestone cave.",
-      image: ""
+      title: "Cycling around Pokhara",
+      description: "Explore the scenic routes around Pokhara.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjrVWZLqmpuUVAiq50URuwkId7YmVZXng75aOCHqcbYYn-jSxVt-y6wA&s=10"
+    },
+     {
+      title: "Zipline Adventure",
+      description: "Zipline through the lush landscapes of Pokhara.",
+      image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg"
     }
   ],
 
@@ -70,27 +75,27 @@ module.exports = {
     {
       title: "Phewa Lake",
       description: "Largest lake in Pokhara.",
-      image: ""
+      image: "https://english.onlinekhabar.com/wp-content/uploads/2025/07/phewa-lake.jpg"
     },
     {
       title: "Sarangkot",
       description: "Famous viewpoint.",
-      image: ""
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhSdiBwmjT8c8-2w3J2mb__rQlZpIqgnSnHGK-AFbMlX94K8C1QPAd6ey&s=10"
     },
     {
       title: "Begnas Lake",
       description: "Peaceful freshwater lake.",
-      image: ""
+      image: "https://media.nepaltrekadventures.com/uploads/img/begnas-lake-b.webp"
     },
     {
       title: "Gupteshwor Cave",
       description: "Sacred cave temple.",
-      image: ""
+      image: "https://res.cloudinary.com/kmadmin/image/upload/v1735641392/kiomoi/Gupteshwor_Mahadev_Cave_2510.jpg"
     },
     {
       title: "International Mountain Museum",
       description: "Museum about Himalayan climbing.",
-      image: ""
+      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4f/0d/6c/international-mountain.jpg?w=1200&h=-1&s=1"
     }
   ],
 
@@ -98,25 +103,25 @@ module.exports = {
     {
       title: "Paragliding",
       description: "Fly above Pokhara Valley.",
-      image: "",
+      image: "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp",
       price: 90
     },
     {
       title: "Zipline",
       description: "One of the world's steepest zip lines.",
-      image: "",
+      image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg",
       price: 75
     },
     {
       title: "Ultra-light Flight",
       description: "Scenic mountain flight.",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPljTJLlQ4oIP4Bx0g9FhpJsm8RcmnZcgk6FEhrdsanQ&s=10",
       price: 120
     },
     {
       title: "Bungee Jump",
       description: "Adventure jump experience.",
-      image: "",
+      image: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/sfazuuldlqe49vgmulot/BungeeJumpPokhara.jpg",
       price: 95
     }
   ],
@@ -124,31 +129,31 @@ module.exports = {
   hotels: [
     {
       name: "Temple Tree Resort",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlm0PUaBu0iWxGtnQsqTpjl82cM-8LSB--D9FgKA9B4N6a9nqkKhzy85q&s=10",
       rating: 4.8,
       price: 180
     },
     {
       name: "Bar Peepal Resort",
-      image: "",
+      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/767597275.jpg?k=79f3075ffd9878f248f09ee0cd0ffea4c02ea3c2e2716587af42b69ed6b1ac1b&o=",
       rating: 4.7,
       price: 160
     },
     {
       name: "Waterfront Resort",
-      image: "",
+      image: "https://images.travel-cdn.com/image/upload/s--MAoZR19n--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1662100960/0e303fb6da16f74a4976e662dcbe27cdb405b0ee?_a=BACAEuEv&atc=bc5da95f",
       rating: 4.6,
       price: 140
     },
     {
       name: "Fish Tail Lodge",
-      image: "",
+      image: "https://www.fishtail-lodge.com/images/preference/QpzyH-social-image.jpg",
       rating: 4.8,
       price: 200
     },
     {
       name: "Hotel Middle Path",
-      image: "",
+      image: "https://s3-cdn.hotellinksolutions.com/hls/data/1916/website/general/bn/normal_hotel-middlepath-and-spa-pokhara-banner6.jpg",
       rating: 4.5,
       price: 90
     }

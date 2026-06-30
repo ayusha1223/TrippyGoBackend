@@ -5,7 +5,7 @@ module.exports = {
   slug: "lumbini",
 
   heroImage:
-    "https://images.unsplash.com/photo-1548013146-72479768bada",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/BRP_Lumbini_Mayadevi_temple.jpg/1280px-BRP_Lumbini_Mayadevi_temple.jpg",
 
   gallery: [
     "https://images.unsplash.com/photo-1548013146-72479768bada",
@@ -44,27 +44,27 @@ module.exports = {
     {
       title: "Visit Maya Devi Temple",
       description: "Explore the birthplace of Lord Buddha.",
-      image: ""
+      image: "https://www.historyhit.com/app/uploads/bis-images/5154753/shutterstock_590462096-1-788x537.jpg?x64072"
     },
     {
       title: "Meditation",
       description: "Experience peace in the sacred gardens.",
-      image: ""
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbmoZY7PGovL5QJyGhD3qHKDt0FVphFZlA2BrbBmKDbOp45Q_Ug3Vc7E&s=10"
     },
     {
       title: "Explore Monastic Zone",
       description: "Visit monasteries built by different countries.",
-      image: ""
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYaQm_HdTSRYlD-fCsh8zcA6wcLR2Rf5dAr5oIzp9plKhcBLq-6uigC3I&s=10"
     },
     {
       title: "Cycle Around Lumbini",
       description: "Rent a bicycle and explore the heritage area.",
-      image: ""
+      image: "https://www.insidehimalayas.com/wp-content/uploads/2020/03/Cycling-along-the-Maya-Devi-Temple-Road-scaled.jpg"
     },
     {
       title: "Visit Lumbini Museum",
       description: "Learn about Buddhist history and archaeology.",
-      image: ""
+      image: "https://media.nepalitimes.com/1/feature_images/20241214091216_210818b1f88f2b91427a636ca16b59680686deea8653ebcc96a99207e5f3e1b5.jpg"
     }
   ],
 
@@ -77,48 +77,48 @@ module.exports = {
     {
       title: "Ashoka Pillar",
       description: "Historic pillar built by Emperor Ashoka.",
-      image: ""
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4Xbpk5fcwg-Kwv2SQp914WsYi83d9_30mevwOICqw5mbyqo249Z_VNA&s=10"
     },
     {
       title: "Sacred Garden",
       description: "Peaceful UNESCO heritage site.",
-      image: ""
+      image: "https://culture-hongkong.com/wp-content/uploads/2015/06/Decorated-tree-at-The-Sacred-Garden-Lumbini.jpg"
     },
     {
       title: "World Peace Pagoda",
       description: "Beautiful white Buddhist stupa.",
-      image: ""
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/25/Peace_Pagoda_of_Lumbini.JPG"
     },
     {
       title: "Lumbini Monastic Zone",
       description: "International monasteries from around the world.",
-      image: ""
+      image: "https://www.holidify.com/images/cmsuploads/compressed/Gemrany_Monastery,Lumbini_20181009130404_20181009130413.jpg"
     }
   ],
 
   adventures: [
     {
-      title: "Cycling Tour",
-      description: "Explore Lumbini by bicycle.",
-      image: "",
+      title: "Hot Air Balloon Ride",
+      description: "Explore Lumbini from above.",
+      image: "https://nepalmotherhousetreks.com/uploads/package/gallery/hot-air-balloon-nepal-price.webp",
       price: 20
     },
     {
-      title: "Guided Heritage Tour",
-      description: "Learn the history of Buddhism.",
-      image: "",
+      title: "Tansen Trekking",
+      description: "Trek to the nearby hills and enjoy panoramic views.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QO9JZF9dotrIot0TT7KLO0paDXy3h89CzhQ88Z1XidRShQ6SPAvJFW4o&s=10",
       price: 40
     },
     {
-      title: "Meditation Retreat",
-      description: "Join a Buddhist meditation session.",
-      image: "",
+      title: "Village Walk",
+      description: "Explore the local villages and interact with the community.",
+      image: "https://d3gz7d9rg09miz.cloudfront.net/travel/1751088476782-200867743.png",
       price: 50
     },
     {
       title: "Cultural Tour",
       description: "Experience local traditions and festivals.",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFqRli9yY8lbcCqNnW45iIjhpDder4y5IeUsZbqP1F2bfAbtz2ZdxqHc&s=10",
       price: 35
     }
   ],
@@ -126,31 +126,31 @@ module.exports = {
   hotels: [
     {
       name: "Tiger Palace Resort",
-      image: "",
+      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/615097616.jpg?k=d3e34f137ebfb9de984a067006063753fb96a633cc96db9e5691f05df03e67d9&o=",
       rating: 4.9,
       price: 180
     },
     {
       name: "Lumbini Buddha Garden",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tV1xiOmoL8jCFLC38m7n8xiolbR8CIJiod-hu85FxA&s=10",
       rating: 4.8,
       price: 120
     },
     {
       name: "Hotel Nirvana",
-      image: "",
+      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/291964527.jpg?k=6cc253311a5d0790c746230f4a3c8d1db918c200de4c7488bbae6bd32f9ae505&o=",
       rating: 4.7,
       price: 95
     },
     {
       name: "Lumbini Hokke Hotel",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz6biGCjA5-1o-8kUCb1pA0Nf6VfGS8kxibcfs7TF7XCkeaeh8E4neDb1A&s=10",
       rating: 4.6,
       price: 110
     },
     {
       name: "Hotel Ananda Inn",
-      image: "",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22R-Kl0fGA1mn80e8hoPuXV-GC1A_XjLcQeHbwOU_Rg&s=10",
       rating: 4.5,
       price: 70
     }

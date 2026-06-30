@@ -8,19 +8,19 @@ const mustang = require("./mustang");
 const chitwan = require("./chitwan");
 const manang = require("./manang");
 const tilicho = require("./tilicho");
-const abc = require("./abc");
-const mardi = require("./mardi");
-const kori = require("./kori");
-const everest = require("./everest");
+// const abc = require("./abc");
+// const mardi = require("./mardi");
+// const kori = require("./kori");
+// const everest = require("./everest");
 const lumbini = require("./lumbini");
-const rara = require("./rara");
-const gosaikunda = require("./gosaikunda");
-// const bandipur = require("./bandipur");
+// const rara = require("./rara");
+// const gosaikunda = require("./gosaikunda");
+const bandipur = require("./bandipur");
 // const ilam = require("./ilam");
 // const nagarkot = require("./nagarkot");
-// const bhaktapur = require("./bhaktapur");
+const bhaktapur = require("./bhaktapur");
 // const patan = require("./patan");
-// const janakpur = require("./janakpur");
+const janakpur = require("./janakpur");
 
 const destinations = [
   pokhara,
@@ -28,19 +28,19 @@ const destinations = [
   chitwan,
   manang,
   tilicho,
-  abc,
-  mardi,
-  kori,
-  everest,
+  // abc,
+  // mardi,
+  // kori,
+  // everest,
   lumbini,
-  rara,
-  gosaikunda,
-//   bandipur,
+  // rara,
+  // gosaikunda,
+  bandipur,
 //   ilam,
 //   nagarkot,
-//   bhaktapur,
+  bhaktapur,
 //   patan,
-//   janakpur,
+  janakpur,
 ];
 
 const importData = async () => {
