@@ -4,7 +4,7 @@ module.exports = {
   slug: "janakpur",
 
   heroImage:
-    "https://images.unsplash.com/photo-1605640840605-14ac1855827b",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVQjyTTxd_E_HkiTo-BIidkRrYyjVurpogU067GgM_Q&s=10",
 
   gallery: [
     "https://images.unsplash.com/photo-1605640840605-14ac1855827b",
@@ -45,108 +45,73 @@ module.exports = {
       description:
         "Explore Nepal's largest and most beautiful Hindu temple dedicated to Goddess Sita.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/4/43/Janaki_Mandir.jpg"
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a9/7a/fb/the-beautiful-janaki.jpg?w=1200&h=1200&s=1"
     },
     {
       title: "Explore Ram Sita Vivah Mandap",
       description:
         "Visit the sacred marriage site of Lord Rama and Goddess Sita.",
       image:
-        "https://www.welcomenepal.com/uploads/destination/ram-sita-vivah-mandap.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUsIKgqGh46mq0ee2Sx9ZwcL-zXKjoJcQQcjrlsDBPXQd6SBMEEHdWjs&s=10"
     },
     {
       title: "Walk Around Ganga Sagar",
       description:
         "Relax beside one of Janakpur's most sacred ponds visited by pilgrims.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Ganga_Sagar_Janakpur.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRRjrd5wtpSN-cxOFPcgSoAjAAOFgJ4Y4yntJC2PfwA&s=10"
     },
     {
       title: "Experience Mithila Art",
       description:
         "Discover colorful Maithili paintings created by local artists.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mithila_Painting.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9a7PEnxKBKI25fAqlNeHpJhBtyPM1cGYLkRLRinv1mHCwDciUstHYJe8&s=10"
     },
     {
       title: "Taste Maithili Cuisine",
       description:
         "Enjoy authentic Mithila dishes and traditional sweets.",
       image:
-        "https://www.nepalitimes.com/wp-content/uploads/2021/06/Maithili-food.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4EaOObYPLyRi2_rQ7Hq4AsloFD3PC57kE3uPIcF99fNY02gI0V7H8cU0R&s=10"
     }
   ],
 
   placesToVisit: [
     {
-      title: "Janaki Temple",
+      title: "Janakpur Railway Station",
       description:
-        "The iconic white marble palace dedicated to Goddess Sita.",
+        "Historic railway station connecting Janakpur to other parts of Nepal and India.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/4/43/Janaki_Mandir.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-fVr9EoCx6tI4OmJoeASy2URwVpndAwweItVwYBlGqQ&s=10"
     },
     {
-      title: "Ram Sita Vivah Mandap",
+      title: "Jaleshwar Mahadev Temple",
       description:
-        "Sacred wedding pavilion commemorating the marriage of Lord Rama and Sita.",
+        "Ancient temple dedicated to Lord Shiva, located in the heart of Janakpur.",
       image:
-        "https://www.welcomenepal.com/uploads/destination/ram-sita-vivah-mandap.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/e8/Jaleshwar_Mahadev_Temple_at_Jaleshwar_%2C_Janakpur.jpg"
     },
     {
-      title: "Ganga Sagar",
+      title: "DhanushaDham Temple",
       description:
-        "Holy pond surrounded by temples and pilgrimage sites.",
+        "Dhanusa Temple, a sacred site associated with the Ramayana epic.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Ganga_Sagar_Janakpur.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRadblaNg6JPYIGqPDMjQCyH4dvedlWgIWvPLW_T9QYRMUjWZZXqL5vnYOt&s=10"
     },
     {
-      title: "Dhanush Sagar",
+      title: "Hanuman Temple",
       description:
-        "Historic pond closely associated with Janakpur's religious heritage.",
+        "Hanuman Temple, a revered site for devotees of Lord Hanuman.",
       image:
-        "https://www.welcomenepal.com/uploads/destination/dhanush-sagar.jpg"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJeRtzg9-KjU9BXrpFj5MiZxulvbaGddVKRvOfq0A2-h0Xg5QDesstKM&s=10"
     },
     {
-      title: "Mithila Art Gallery",
+      title: "Ram Mandir",
       description:
-        "Gallery showcasing traditional Maithili paintings and handicrafts.",
+        "Ram Mandir, a temple dedicated to Lord Rama, located in the heart of Janakpur.",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mithila_Painting.jpg"
-    }
-  ],
-
-  adventures: [
-    {
-      title: "Heritage Walking Tour",
-      description:
-        "Guided exploration of Janakpur's temples and historical landmarks.",
-      image:
-        "https://www.himalayanst.com/uploads/img/janakpur-tour.jpg",
-      price: 20
-    },
-    {
-      title: "Rickshaw City Tour",
-      description:
-        "Explore Janakpur's religious sites by traditional cycle rickshaw.",
-      image:
-        "https://www.nepaltraveladventure.com/images/rickshaw-tour.jpg",
-      price: 10
-    },
-    {
-      title: "Mithila Painting Workshop",
-      description:
-        "Learn the famous Mithila painting style from local artists.",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Mithila_Painting.jpg",
-      price: 18
-    },
-    {
-      title: "Cultural Performance",
-      description:
-        "Watch traditional Maithili music and dance performances.",
-      image:
-        "https://www.welcomenepal.com/uploads/destination/maithili-dance.jpg",
-      price: 15
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/ce/53/ea/ram-mandir.jpg?w=600&h=600&s=1"
     }
   ],
 
@@ -154,35 +119,35 @@ module.exports = {
     {
       name: "Hotel Welcome",
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/2d/5c/0e/hotel-welcome.jpg",
+        "https://www.hotelscombined.com/rimg/himg/df/a6/e5/expediav2-499841-9629e7-234932.jpg?width=968&height=607&crop=true",
       rating: 4.6,
       price: 75
     },
     {
       name: "Hotel Sitasharan",
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0c/ea/e3/hotel-sitasharan.jpg",
+        "https://a.otcdn.com/imglib/hotelphotos/4/8/666/hotel-sita-sharan-janakpur-000.webp",
       rating: 4.5,
       price: 65
     },
     {
       name: "Hotel City Star",
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e0/2b/c4/hotel-city-star.jpg",
+        "https://images.trvl-media.com/lodging/112000000/111610000/111607600/111607556/6b434e18.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
       rating: 4.4,
       price: 60
     },
     {
       name: "Annapurna Hotel",
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/5b/48/f5/hotel-annapurna.jpg",
+        "https://cdn.esewahotels.com/hotels/1691039134-1004198893.jpg",
       rating: 4.3,
       price: 55
     },
     {
       name: "Hotel Mystic Mithila",
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/ba/72/e5/hotel-mystic-mithila.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2iEckgo4AjCeLG1HneRYD6hdpdQJlxDdriYeBmPRKlmzkytKBstRkZHW&s=10",
       rating: 4.7,
       price: 90
     }
