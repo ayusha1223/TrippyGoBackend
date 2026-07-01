@@ -8,18 +8,12 @@ const mustang = require("./mustang");
 const chitwan = require("./chitwan");
 const manang = require("./manang");
 const tilicho = require("./tilicho");
-// const abc = require("./abc");
-// const mardi = require("./mardi");
-// const kori = require("./kori");
-// const everest = require("./everest");
 const lumbini = require("./lumbini");
-// const rara = require("./rara");
-// const gosaikunda = require("./gosaikunda");
+const sheyPhoksundo = require("./sheyPhoksundo");
 const bandipur = require("./bandipur");
-// const ilam = require("./ilam");
-// const nagarkot = require("./nagarkot");
+const ilam = require("./ilam");
+const nagarkot = require("./nagarkot");
 const bhaktapur = require("./bhaktapur");
-// const patan = require("./patan");
 const janakpur = require("./janakpur");
 
 const destinations = [
@@ -28,18 +22,12 @@ const destinations = [
   chitwan,
   manang,
   tilicho,
-  // abc,
-  // mardi,
-  // kori,
-  // everest,
   lumbini,
-  // rara,
-  // gosaikunda,
+  sheyPhoksundo,
   bandipur,
-//   ilam,
-//   nagarkot,
+  ilam,
+  nagarkot,
   bhaktapur,
-//   patan,
   janakpur,
 ];
 
