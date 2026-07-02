@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
-
+const upload = require("../config/multer");
 const protect = require("../middleware/authMiddleware");
 
 const {
   getProfile,
+  updateProfile,
+  uploadProfileImage,
+
   addFavorite,
   removeFavorite,
   getFavorites,
@@ -20,6 +23,14 @@ const {
 */
 
 router.get("/profile", protect, getProfile);
+
+router.put("/profile", protect, updateProfile);
+router.post(
+  "/profile-image",
+  protect,
+  upload.single("image"),
+  uploadProfileImage
+);
 
 /*
 |--------------------------------------------------------------------------

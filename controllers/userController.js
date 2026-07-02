@@ -3,6 +3,83 @@ const Destination = require("../models/Destination");
 
 /*
 |--------------------------------------------------------------------------
+| UPLOAD PROFILE IMAGE
+|--------------------------------------------------------------------------
+*/
+
+exports.uploadProfileImage = async (req, res) => {
+  try {
+
+    const user = await User.findById(req.user.id);
+
+    if (!user) {
+      return res.status(404).json({
+        message: "User not found",
+      });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({
+        message: "No image uploaded",
+      });
+    }
+
+    user.profileImage = req.file.path;
+
+    await user.save();
+
+    res.json({
+      message: "Profile image updated successfully",
+      profileImage: user.profileImage,
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+};
+/*
+|--------------------------------------------------------------------------
+| UPDATE PROFILE
+|--------------------------------------------------------------------------
+*/
+
+exports.updateProfile = async (req, res) => {
+  try {
+
+    const user = await User.findById(req.user.id);
+
+    if (!user) {
+      return res.status(404).json({
+        message: "User not found",
+      });
+    }
+
+    user.name = req.body.name || user.name;
+    user.email = req.body.email || user.email;
+    user.phone = req.body.phone || user.phone;
+    user.location = req.body.location || user.location;
+
+    await user.save();
+
+    res.json({
+      message: "Profile updated successfully",
+      user,
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+};
+/*
+|--------------------------------------------------------------------------
 | GET PROFILE
 |--------------------------------------------------------------------------
 */
