@@ -2,6 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
+const protect = require("../middleware/authMiddleware");
+
 const {
   getItineraries,
   getItinerary,
@@ -9,12 +11,12 @@ const {
   deleteItinerary,
 } = require("../controllers/itineraryController");
 
-router.get("/", getItineraries);
+router.get("/", protect, getItineraries);
 
-router.get("/:id", getItinerary);
+router.get("/:id", protect, getItinerary);
 
-router.post("/", createItinerary);
+router.post("/", protect, createItinerary);
 
-router.delete("/:id", deleteItinerary);
+router.delete("/:id", protect, deleteItinerary);
 
 module.exports = router;

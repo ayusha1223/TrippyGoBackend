@@ -4,9 +4,11 @@ const Itinerary = require("../models/Itinerary");
 
 exports.getItineraries = async (req, res) => {
   try {
-    const itineraries = await Itinerary.find().sort({
-      createdAt: -1,
-    });
+    const itineraries = await Itinerary.find({
+  user: req.user.id,
+}).sort({
+  createdAt: -1,
+});
 
     res.json(itineraries);
   } catch (error) {
@@ -42,13 +44,20 @@ exports.getItinerary = async (req, res) => {
 
 exports.createItinerary = async (req, res) => {
   try {
-    const itinerary = await Itinerary.create(req.body);
+
+    const itinerary = await Itinerary.create({
+      ...req.body,
+      user: req.user.id,
+    });
 
     res.status(201).json(itinerary);
+
   } catch (error) {
+
     res.status(500).json({
       message: error.message,
     });
+
   }
 };
 

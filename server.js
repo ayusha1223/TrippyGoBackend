@@ -7,7 +7,9 @@ const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const aiRoutes = require("./routes/aiRoutes");
 const itineraryRoutes = require("./routes/itineraryRoutes");
+const adventureRoutes = require("./routes/adventureRoutes");
 const savedItemRoutes = require("./routes/savedItemRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 const app = express();
 
 connectDB();
@@ -20,7 +22,9 @@ app.use("/api/users", userRoutes);
 app.use("/api/ai", aiRoutes);
 app.use("/api/destinations", destinationRoutes);
 app.use("/api/itineraries", itineraryRoutes);
+app.use("/api/adventures", adventureRoutes);
 app.use("/api/items", savedItemRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 app.get("/", (req, res) => {
   res.json({
     message: "TrippyGo API Running",
