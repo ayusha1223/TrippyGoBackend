@@ -8,6 +8,45 @@ const bcrypt = require("bcryptjs");
 | CREATE USER
 |--------------------------------------------------------------------------
 */
+/*
+|--------------------------------------------------------------------------
+| UPDATE ADMIN PROFILE
+|--------------------------------------------------------------------------
+*/
+
+exports.updateAdminProfile = async (req, res) => {
+
+  try {
+
+    const admin = await User.findById(req.user.id);
+
+    if (!admin) {
+
+      return res.status(404).json({
+        message: "Admin not found",
+      });
+
+    }
+
+    admin.name = req.body.name;
+    admin.email = req.body.email;
+    admin.phone = req.body.phone;
+
+    await admin.save();
+
+    res.json(admin);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
 
 exports.createUser = async (req, res) => {
 
@@ -416,6 +455,39 @@ exports.getItinerary = async (req, res) => {
     }
 
     res.json(itinerary);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
+/*
+|--------------------------------------------------------------------------
+| GET ADMIN PROFILE
+|--------------------------------------------------------------------------
+*/
+
+exports.getAdminProfile = async (req, res) => {
+
+  try {
+    console.log(req.user);
+const admin = await User.findById(req.user.id).select("-password");
+
+    if (!admin) {
+
+      return res.status(404).json({
+        message: "Admin not found",
+      });
+
+    }
+
+    res.json(admin);
 
   } catch (error) {
 

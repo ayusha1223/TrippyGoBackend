@@ -11,7 +11,7 @@ const {
   createUser,
   updateUser,
   deleteUser,
-
+  getAdminProfile,
   getItineraries,
   getItinerary,
   deleteItinerary,
@@ -95,6 +95,18 @@ router.get(
   protect,
   admin,
   getItinerary
+);
+/*
+|--------------------------------------------------------------------------
+| ADMIN PROFILE
+|--------------------------------------------------------------------------
+*/
+
+router.get(
+  "/profile",
+  protect,
+  admin,
+  getAdminProfile
 );
 
 
