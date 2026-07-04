@@ -1,6 +1,52 @@
 const User = require("../models/User");
 const Destination = require("../models/Destination");
 const Itinerary = require("../models/Itinerary");
+const bcrypt = require("bcryptjs");
+
+/*
+|--------------------------------------------------------------------------
+| CREATE USER
+|--------------------------------------------------------------------------
+*/
+
+exports.createUser = async (req, res) => {
+
+  try {
+
+    const { name, email, password, role } = req.body;
+
+    const existingUser = await User.findOne({ email });
+
+    if (existingUser) {
+
+      return res.status(400).json({
+        message: "Email already exists.",
+      });
+
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+      role: role || "user",
+    });
+
+    res.status(201).json(user);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -118,6 +164,75 @@ exports.getUsers = async (req, res) => {
   }
 
 };
+/*
+|--------------------------------------------------------------------------
+| GET SINGLE USER
+|--------------------------------------------------------------------------
+*/
+
+exports.getUser = async (req, res) => {
+
+  try {
+
+    const user = await User.findById(req.params.id)
+      .select("-password");
+
+    if (!user) {
+
+      return res.status(404).json({
+        message: "User not found",
+      });
+
+    }
+
+    res.json(user);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
+/*
+|--------------------------------------------------------------------------
+| DELETE USER
+|--------------------------------------------------------------------------
+*/
+
+exports.deleteUser = async (req, res) => {
+
+  try {
+
+    const user = await User.findByIdAndDelete(req.params.id);
+
+    if (!user) {
+
+      return res.status(404).json({
+        message: "User not found",
+      });
+
+    }
+
+    res.json({
+      message: "User deleted successfully",
+    });
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -176,7 +291,143 @@ exports.createDestination = async (req, res) => {
 | DELETE DESTINATION
 |--------------------------------------------------------------------------
 */
+/*
+|--------------------------------------------------------------------------
+| UPDATE USER
+|--------------------------------------------------------------------------
+*/
 
+exports.updateUser = async (req, res) => {
+
+  try {
+
+    const user = await User.findById(req.params.id);
+
+    if (!user) {
+
+      return res.status(404).json({
+        message: "User not found",
+      });
+
+    }
+
+    user.name = req.body.name;
+    user.email = req.body.email;
+    user.role = req.body.role;
+
+    await user.save();
+
+    res.json(user);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
+/*
+|--------------------------------------------------------------------------
+| GET ALL ITINERARIES
+|--------------------------------------------------------------------------
+*/
+
+exports.getItineraries = async (req, res) => {
+
+  try {
+
+    const itineraries = await Itinerary
+      .find()
+      .populate("user", "name email")
+      .sort({ createdAt: -1 });
+
+    res.json(itineraries);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
+/*
+|--------------------------------------------------------------------------
+| DELETE ITINERARY
+|--------------------------------------------------------------------------
+*/
+
+exports.deleteItinerary = async (req, res) => {
+
+  try {
+
+    const itinerary = await Itinerary.findByIdAndDelete(req.params.id);
+
+    if (!itinerary) {
+
+      return res.status(404).json({
+        message: "Itinerary not found",
+      });
+
+    }
+
+    res.json({
+      message: "Itinerary deleted successfully",
+    });
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
+/*
+|--------------------------------------------------------------------------
+| GET SINGLE ITINERARY
+|--------------------------------------------------------------------------
+*/
+
+exports.getItinerary = async (req, res) => {
+
+  try {
+
+    const itinerary = await Itinerary
+      .findById(req.params.id)
+      .populate("user", "name email");
+
+    if (!itinerary) {
+
+      return res.status(404).json({
+        message: "Itinerary not found",
+      });
+
+    }
+
+    res.json(itinerary);
+
+  } catch (error) {
+
+    console.error(error);
+
+    res.status(500).json({
+      message: error.message,
+    });
+
+  }
+
+};
 exports.deleteDestination = async (req, res) => {
 
   try {

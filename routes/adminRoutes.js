@@ -3,14 +3,24 @@ const router = express.Router();
 
 const protect = require("../middleware/authMiddleware");
 const admin = require("../middleware/adminMiddleware");
-
 const {
   getDashboardStats,
+
   getUsers,
+  getUser,
+  createUser,
+  updateUser,
+  deleteUser,
+
+  getItineraries,
+  getItinerary,
+  deleteItinerary,
+
   createDestination,
   getDestination,
   updateDestination,
   deleteDestination,
+
 } = require("../controllers/adminController");
 
 /*
@@ -18,12 +28,39 @@ const {
 | Dashboard
 |--------------------------------------------------------------------------
 */
+// Get single user
+router.get(
+  "/users/:id",
+  protect,
+  admin,
+  getUser
+);
+// Create User
+router.post(
+  "/users",
+  protect,
+  admin,
+  createUser
+);
+// Delete User
+router.delete(
+  "/users/:id",
+  protect,
+  admin,
+  deleteUser
+);
 
 router.get(
   "/dashboard",
   protect,
   admin,
   getDashboardStats
+);
+router.put(
+  "/users/:id",
+  protect,
+  admin,
+  updateUser
 );
 
 // Update Destination
@@ -33,6 +70,33 @@ router.put(
   admin,
   updateDestination
 );
+
+/*
+|--------------------------------------------------------------------------
+| ITINERARIES
+|--------------------------------------------------------------------------
+*/
+
+router.get(
+  "/itineraries",
+  protect,
+  admin,
+  getItineraries
+);
+
+router.delete(
+  "/itineraries/:id",
+  protect,
+  admin,
+  deleteItinerary
+);
+router.get(
+  "/itineraries/:id",
+  protect,
+  admin,
+  getItinerary
+);
+
 
 /*
 |--------------------------------------------------------------------------
