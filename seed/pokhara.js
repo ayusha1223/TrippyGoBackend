@@ -40,151 +40,436 @@ module.exports = {
 
   thingsToDo: [
     {
-      title: "Boating on Phewa Lake",
-      description: "Enjoy boating with Annapurna reflections.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YmcPFPYVwaHjI2UHwiqcOX8b6FkADwifNrkvne5lKWTWNIY5AD1Pls0&s=10"
-    },
+  title: "Boating on Phewa Lake",
+
+  description:
+    "Enjoy a relaxing boat ride across the beautiful Phewa Lake while admiring the Annapurna mountain range and Tal Barahi Temple.",
+
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YmcPFPYVwaHjI2UHwiqcOX8b6FkADwifNrkvne5lKWTWNIY5AD1Pls0&s=10",
+
+  location: "Phewa Lake, Pokhara",
+
+  price: 15,
+
+  duration: "1 Hour",
+
+  bestTime: "September - November",
+
+  openingHours: "6:00 AM - 6:00 PM",
+
+  tips: [
+    "Wear a life jacket.",
+    "Visit during sunrise or sunset.",
+    "Carry sunscreen.",
+    "Keep your camera ready."
+  ]
+},
+   {
+  title: "Kayaking on Begnas Lake",
+
+  description:
+    "Paddle through the calm waters of Begnas Lake while enjoying peaceful surroundings, lush green hills, and stunning Himalayan scenery.",
+
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJl3nL_R73_tU8JOZj5CSZl5ZXzxs8HOVyXfcv6ZFMEB4GH_JBZA_KfZk&s=10",
+
+  location: "Begnas Lake, Pokhara",
+
+  price: 25,
+
+  duration: "2 Hours",
+
+  bestTime: "September - November",
+
+  openingHours: "7:00 AM - 5:30 PM",
+
+  tips: [
+    "Wear a life jacket.",
+    "Suitable for beginners.",
+    "Visit during the morning for calm water.",
+    "Carry waterproof bags for valuables."
+  ]
+},
     {
-      title: "Kayaking on Begnas Lake",
-      description: "Enjoy Kayaking in the serene Begnas Lake.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJl3nL_R73_tU8JOZj5CSZl5ZXzxs8HOVyXfcv6ZFMEB4GH_JBZA_KfZk&s=10"
-    },
-    {
-      title: "Paragliding in Sarangkot",
-      description: "One of Nepal's best sunrise viewpoints with paragliding.",
-      image: "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp"
-    },
-    {
-      title: "Canyoning in Pokhara",
-      description: "Experience the thrill of canyoning in Pokhara's rivers and waterfalls.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicjz_qFADncF9lQ-khJFAK8hU_QQWRhCjC8wi8R8AHclMnerAUMhTHTTz&s=10"
-    },
-    {
-      title: "Cycling around Pokhara",
-      description: "Explore the scenic routes around Pokhara.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjrVWZLqmpuUVAiq50URuwkId7YmVZXng75aOCHqcbYYn-jSxVt-y6wA&s=10"
-    },
-     {
-      title: "Zipline Adventure",
-      description: "Zipline through the lush landscapes of Pokhara.",
-      image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg"
-    }
+  title: "Paragliding in Sarangkot",
+
+  description:
+    "Soar high above Pokhara Valley with breathtaking aerial views of Phewa Lake, the Annapurna mountain range, and Machhapuchhre while flying with a certified pilot.",
+
+  image:
+    "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp",
+
+  location: "Sarangkot, Pokhara",
+
+  price: 90,
+
+  duration: "30 Minutes",
+
+  bestTime: "September - November",
+
+  openingHours: "8:00 AM - 4:00 PM",
+
+  tips: [
+    "Wear comfortable clothing.",
+    "Carry sunglasses.",
+    "Avoid heavy meals before flying.",
+    "Morning flights offer the best mountain views."
+  ]
+},
+
+{
+  title: "Canyoning in Pokhara",
+
+  description:
+    "Jump, slide, swim, and abseil through waterfalls and natural rock formations under the guidance of experienced adventure instructors.",
+
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicjz_qFADncF9lQ-khJFAK8hU_QQWRhCjC8wi8R8AHclMnerAUMhTHTTz&s=10",
+
+  location: "Lumle, Pokhara",
+
+  price: 65,
+
+  duration: "4 Hours",
+
+  bestTime: "March - May",
+
+  openingHours: "8:00 AM - 3:00 PM",
+
+  tips: [
+    "Wear sports shoes.",
+    "Bring extra clothes.",
+    "Follow your instructor at all times.",
+    "Waterproof bags are recommended."
+  ]
+},
+
+{
+  title: "Cycling around Pokhara",
+
+  description:
+    "Cycle through peaceful villages, lakeside roads, forests, and scenic viewpoints while enjoying beautiful Himalayan landscapes.",
+
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjrVWZLqmpuUVAiq50URuwkId7YmVZXng75aOCHqcbYYn-jSxVt-y6wA&s=10",
+
+  location: "Pokhara",
+
+  price: 20,
+
+  duration: "3 Hours",
+
+  bestTime: "October - April",
+
+  openingHours: "6:00 AM - 6:00 PM",
+
+  tips: [
+    "Wear a helmet.",
+    "Carry drinking water.",
+    "Use sunscreen.",
+    "Morning rides have less traffic."
+  ]
+},
+
+{
+  title: "Zipline Adventure",
+
+  description:
+    "Ride one of the world's longest and steepest zip lines while enjoying spectacular views of Pokhara Valley, forests, and the Annapurna Himalayas.",
+
+  image:
+    "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg",
+
+  location: "Sarangkot, Pokhara",
+
+  price: 75,
+
+  duration: "20 Minutes",
+
+  bestTime: "September - November",
+
+  openingHours: "9:00 AM - 5:00 PM",
+
+  tips: [
+    "Wear closed shoes.",
+    "Secure loose belongings.",
+    "Arrive 30 minutes early.",
+    "Follow all safety instructions."
+  ]
+},
   ],
 
   placesToVisit: [
-    {
-      title: "Phewa Lake",
-      description: "Largest lake in Pokhara.",
-      image: "https://english.onlinekhabar.com/wp-content/uploads/2025/07/phewa-lake.jpg"
-    },
-    {
-      title: "Sarangkot",
-      description: "Famous viewpoint.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhSdiBwmjT8c8-2w3J2mb__rQlZpIqgnSnHGK-AFbMlX94K8C1QPAd6ey&s=10"
-    },
-    {
-      title: "Begnas Lake",
-      description: "Peaceful freshwater lake.",
-      image: "https://media.nepaltrekadventures.com/uploads/img/begnas-lake-b.webp"
-    },
-    {
-      title: "Gupteshwor Cave",
-      description: "Sacred cave temple.",
-      image: "https://res.cloudinary.com/kmadmin/image/upload/v1735641392/kiomoi/Gupteshwor_Mahadev_Cave_2510.jpg"
-    },
-    {
-      title: "International Mountain Museum",
-      description: "Museum about Himalayan climbing.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4f/0d/6c/international-mountain.jpg?w=1200&h=-1&s=1"
-    }
-  ],
+   {
+  title: "Phewa Lake",
 
-  adventures: [
-    {
-      title: "Paragliding",
-      description: "Fly above Pokhara Valley.",
-      image: "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp",
-      price: 90
-    },
-    {
-      title: "Zipline",
-      description: "One of the world's steepest zip lines.",
-      image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg",
-      price: 75
-    },
-    {
-      title: "Ultra-light Flight",
-      description: "Scenic mountain flight.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPljTJLlQ4oIP4Bx0g9FhpJsm8RcmnZcgk6FEhrdsanQ&s=10",
-      price: 120
-    },
-    {
-      title: "Bungee Jump",
-      description: "Adventure jump experience.",
-      image: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/sfazuuldlqe49vgmulot/BungeeJumpPokhara.jpg",
-      price: 95
-    }
-  ],
+  description:
+    "The largest and most famous lake in Pokhara, offering boating, lakeside cafes, mountain reflections, and Tal Barahi Temple.",
 
-  hotels: [
-    {
-      name: "Temple Tree Resort",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHlm0PUaBu0iWxGtnQsqTpjl82cM-8LSB--D9FgKA9B4N6a9nqkKhzy85q&s=10",
-      rating: 4.8,
-      price: 180
-    },
-    {
-      name: "Bar Peepal Resort",
-      image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/767597275.jpg?k=79f3075ffd9878f248f09ee0cd0ffea4c02ea3c2e2716587af42b69ed6b1ac1b&o=",
-      rating: 4.7,
-      price: 160
-    },
-    {
-      name: "Waterfront Resort",
-      image: "https://images.travel-cdn.com/image/upload/s--MAoZR19n--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1662100960/0e303fb6da16f74a4976e662dcbe27cdb405b0ee?_a=BACAEuEv&atc=bc5da95f",
-      rating: 4.6,
-      price: 140
-    },
-    {
-      name: "Fish Tail Lodge",
-      image: "https://www.fishtail-lodge.com/images/preference/QpzyH-social-image.jpg",
-      rating: 4.8,
-      price: 200
-    },
-    {
-      name: "Hotel Middle Path",
-      image: "https://s3-cdn.hotellinksolutions.com/hls/data/1916/website/general/bn/normal_hotel-middlepath-and-spa-pokhara-banner6.jpg",
-      rating: 4.5,
-      price: 90
-    }
-  ],
+  image:
+    "https://english.onlinekhabar.com/wp-content/uploads/2025/07/phewa-lake.jpg",
 
-  restaurants: [
-    {
-      name: "Moondance Restaurant",
-      cuisine: "Nepali & Continental",
-      rating: 4.8
-    },
-    {
-      name: "Fresh Elements",
-      cuisine: "Healthy",
-      rating: 4.7
-    },
-    {
-      name: "Caffe Concerto",
-      cuisine: "Italian",
-      rating: 4.6
-    },
-    {
-      name: "Byanjan",
-      cuisine: "Nepali",
-      rating: 4.7
-    },
-    {
-      name: "Roadhouse Cafe",
-      cuisine: "Pizza",
-      rating: 4.6
-    }
+  location: "Pokhara",
+
+  entryFee: "Free",
+
+  openingHours: "Open 24 Hours",
+
+  duration: "2-3 Hours",
+
+  bestTime: "September - November",
+
+  tips: [
+    "Go boating early morning.",
+    "Visit Tal Barahi Temple.",
+    "Watch the sunset.",
+    "Enjoy lakeside restaurants."
   ]
-};
+},
+    {
+  title: "Sarangkot",
+
+  description:
+    "Sarangkot is one of Nepal's most famous viewpoints, offering breathtaking sunrise views over the Annapurna and Dhaulagiri mountain ranges. It is also a popular take-off point for paragliding.",
+
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhSdiBwmjT8c8-2w3J2mb__rQlZpIqgnSnHGK-AFbMlX94K8C1QPAd6ey&s=10",
+
+  location: "Sarangkot, Pokhara",
+
+  entryFee: "Free",
+
+  openingHours: "Open 24 Hours",
+
+  duration: "2 Hours",
+
+  bestTime: "October - April",
+
+  tips: [
+    "Visit before sunrise.",
+    "Carry a light jacket.",
+    "Bring a camera.",
+    "Arrive early to avoid crowds."
+  ]
+},
+
+{
+  title: "Begnas Lake",
+
+  description:
+    "Begnas Lake is a peaceful freshwater lake surrounded by green hills, making it ideal for boating, kayaking, fishing, and relaxing away from the busy city.",
+
+  image:
+    "https://media.nepaltrekadventures.com/uploads/img/begnas-lake-b.webp",
+
+  location: "Begnas, Pokhara",
+
+  entryFee: "Free",
+
+  openingHours: "6:00 AM - 6:00 PM",
+
+  duration: "2-3 Hours",
+
+  bestTime: "September - November",
+
+  tips: [
+    "Try kayaking.",
+    "Enjoy lakeside restaurants.",
+    "Visit during sunset.",
+    "Carry sunscreen."
+  ]
+},
+
+{
+  title: "Gupteshwor Cave",
+
+  description:
+    "Gupteshwor Cave is a sacred limestone cave featuring impressive rock formations and a Hindu shrine dedicated to Lord Shiva. It also provides access to the underground view of Devi's Fall.",
+
+  image:
+    "https://res.cloudinary.com/kmadmin/image/upload/v1735641392/kiomoi/Gupteshwor_Mahadev_Cave_2510.jpg",
+
+  location: "Chhorepatan, Pokhara",
+
+  entryFee: "$2",
+
+  openingHours: "9:00 AM - 5:00 PM",
+
+  duration: "1 Hour",
+
+  bestTime: "Throughout the Year",
+
+  tips: [
+    "Wear comfortable shoes.",
+    "Watch your step inside the cave.",
+    "Photography may be restricted in some areas.",
+    "Visit together with Devi's Fall."
+  ]
+},
+
+{
+  title: "International Mountain Museum",
+
+  description:
+    "The International Mountain Museum showcases the history of Himalayan expeditions, mountain cultures, famous climbers, and Nepal's unique geography and biodiversity.",
+
+  image:
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4f/0d/6c/international-mountain.jpg?w=1200&h=-1&s=1",
+
+  location: "Pokhara",
+
+  entryFee: "$5",
+
+  openingHours: "9:00 AM - 5:00 PM",
+
+  duration: "2 Hours",
+
+  bestTime: "Throughout the Year",
+
+  tips: [
+    "Allocate at least two hours.",
+    "Read the expedition galleries.",
+    "Visit the outdoor exhibits.",
+    "Ideal for families and students."
+  ]
+}
+  ],
+
+ adventures: [
+  {
+    title: "Paragliding",
+
+    description:
+      "Experience one of the world's best paragliding destinations while flying above Phewa Lake, Pokhara Valley, and the Annapurna mountain range with a certified pilot.",
+
+    image:
+      "https://media.greenvalleynepaltreks.com/uploads/fullbanner/paragliding-in-pokhara.webp",
+
+    price: 90,
+
+    location: "Sarangkot, Pokhara",
+
+    duration: "30 Minutes",
+
+    difficulty: "Easy",
+
+    bestTime: "September - November",
+
+    includes: [
+      "Professional Pilot",
+      "Safety Equipment",
+      "Transportation",
+      "Flight Certificate"
+    ],
+
+    tips: [
+      "Wear comfortable clothes.",
+      "Avoid heavy meals before flying.",
+      "Morning flights provide the clearest views.",
+      "Carry sunglasses."
+    ]
+  },
+
+  {
+    title: "Zipline",
+
+    description:
+      "Ride one of the world's steepest and longest zip lines while enjoying panoramic views of Pokhara Valley and the Himalayas.",
+
+    image:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7e/a3/b5.jpg",
+
+    price: 75,
+
+    location: "Sarangkot, Pokhara",
+
+    duration: "20 Minutes",
+
+    difficulty: "Medium",
+
+    bestTime: "September - November",
+
+    includes: [
+      "Safety Harness",
+      "Helmet",
+      "Instructor",
+      "Transportation"
+    ],
+
+    tips: [
+      "Wear closed shoes.",
+      "Secure loose belongings.",
+      "Listen carefully to safety instructions.",
+      "Arrive 30 minutes early."
+    ]
+  },
+
+  {
+    title: "Ultra-light Flight",
+
+    description:
+      "Enjoy a scenic ultra-light aircraft flight over Pokhara, Phewa Lake, and the Annapurna mountain range.",
+
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPljTJLlQ4oIP4Bx0g9FhpJsm8RcmnZcgk6FEhrdsanQ&s=10",
+
+    price: 120,
+
+    location: "Pokhara Airport",
+
+    duration: "45 Minutes",
+
+    difficulty: "Easy",
+
+    bestTime: "October - April",
+
+    includes: [
+      "Pilot",
+      "Safety Briefing",
+      "Insurance"
+    ],
+
+    tips: [
+      "Morning flights offer the best visibility.",
+      "Bring sunglasses.",
+      "Carry a camera.",
+      "Book in advance during peak season."
+    ]
+  },
+
+  {
+    title: "Bungee Jump",
+
+    description:
+      "Leap from a professionally designed platform and experience an unforgettable adrenaline rush with stunning Himalayan scenery.",
+
+    image:
+      "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/sfazuuldlqe49vgmulot/BungeeJumpPokhara.jpg",
+
+    price: 95,
+
+    location: "Pokhara",
+
+    duration: "30 Minutes",
+
+    difficulty: "Hard",
+
+    bestTime: "September - November",
+
+    includes: [
+      "Safety Equipment",
+      "Jump Certificate",
+      "Professional Instructor"
+    ],
+
+    tips: [
+      "Wear comfortable clothing.",
+      "Follow all instructor directions.",
+      "Avoid carrying loose items.",
+      "Suitable for healthy adults only."
+    ]
+  }
+],
+}
 

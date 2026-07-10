@@ -17,6 +17,12 @@ const adventureSchema = new mongoose.Schema(
       required: true,
     },
 
+    gallery: [
+      {
+        type: String,
+      },
+    ],
+
     location: {
       type: String,
       required: true,
@@ -47,6 +53,52 @@ const adventureSchema = new mongoose.Schema(
       type: Number,
       default: 5,
     },
+
+    bestTime: String,
+
+    maxAltitude: String,
+
+    groupSize: String,
+
+    minimumAge: Number,
+
+    pickupLocation: String,
+
+    highlights: [
+      {
+        type: String,
+      },
+    ],
+
+    itinerary: [
+      {
+        type: String,
+      },
+    ],
+
+    includes: [
+      {
+        type: String,
+      },
+    ],
+
+    excludes: [
+      {
+        type: String,
+      },
+    ],
+
+    thingsToCarry: [
+      {
+        type: String,
+      },
+    ],
+
+    safetyTips: [
+      {
+        type: String,
+      },
+    ],
 
     destination: {
       type: mongoose.Schema.Types.ObjectId,
