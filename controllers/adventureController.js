@@ -4,6 +4,7 @@ const Adventure = require("../models/Adventure");
 exports.getAllAdventures = async (req, res) => {
   try {
     const adventures = await Adventure.find();
+    console.log(adventures);
 
     res.status(200).json(adventures);
 

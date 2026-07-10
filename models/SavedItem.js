@@ -7,12 +7,11 @@ const savedItemSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-
-    destination: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Destination",
-      required: true,
-    },
+destination: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: "Destination",
+  default: null,
+},
 
     type: {
       type: String,

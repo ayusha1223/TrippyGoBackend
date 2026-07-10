@@ -52,38 +52,96 @@ const destinationSchema = new mongoose.Schema(
     tags: [String],
 
     thingsToDo: [
-      {
-        title: String,
-        description: String,
-        image: String,
-      },
-    ],
+  {
+    title: String,
 
-    placesToVisit: [
-      {
-        title: String,
-        description: String,
-        image: String,
-      },
-    ],
+    description: String,
+
+    image: String,
+
+    price: Number,
+
+    duration: String,
+
+    location: String,
+
+    bestTime: String,
+
+    openingHours: String,
+
+    tips: [String],
+  },
+],
+
+   placesToVisit: [
+  {
+    title: String,
+
+    description: String,
+
+    image: String,
+
+    location: String,
+
+    entryFee: String,
+
+    openingHours: String,
+
+    bestTime: String,
+
+    duration: String,
+
+    tips: [String],
+  },
+],
 
     adventures: [
-      {
-        title: String,
-        description: String,
-        image: String,
-        price: Number,
-      },
-    ],
+  {
+    title: String,
 
-    hotels: [
-      {
-        name: String,
-        image: String,
-        rating: Number,
-        price: Number,
-      },
-    ],
+    description: String,
+
+    image: String,
+
+    price: Number,
+
+    duration: String,
+
+    location: String,
+
+    difficulty: String,
+
+    bestTime: String,
+
+    includes: [String],
+
+    tips: [String],
+  },
+],
+
+   hotels: [
+  {
+    name: String,
+
+    image: String,
+
+    rating: Number,
+
+    price: Number,
+
+    location: String,
+
+    description: String,
+
+    amenities: [String],
+
+    checkIn: String,
+
+    checkOut: String,
+
+    website: String,
+  },
+],
 
     restaurants: [
       {

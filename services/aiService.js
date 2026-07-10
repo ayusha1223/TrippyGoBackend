@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/ai/guide";
+const API = "http://localhost:5001/api/ai/guide";
 
 export async function askAI(prompt) {
   const response = await fetch(API, {
