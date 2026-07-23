@@ -1,12 +1,6 @@
 const User = require("../models/User");
 const Destination = require("../models/Destination");
 
-/*
-|--------------------------------------------------------------------------
-| UPLOAD PROFILE IMAGE
-|--------------------------------------------------------------------------
-*/
-
 exports.uploadProfileImage = async (req, res) => {
   try {
 
@@ -41,11 +35,6 @@ exports.uploadProfileImage = async (req, res) => {
 
   }
 };
-/*
-|--------------------------------------------------------------------------
-| UPDATE PROFILE
-|--------------------------------------------------------------------------
-*/
 
 exports.updateProfile = async (req, res) => {
   try {
@@ -78,11 +67,6 @@ exports.updateProfile = async (req, res) => {
 
   }
 };
-/*
-|--------------------------------------------------------------------------
-| GET PROFILE
-|--------------------------------------------------------------------------
-*/
 
 exports.getProfile = async (req, res) => {
   try {
@@ -96,11 +80,6 @@ exports.getProfile = async (req, res) => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| ADD FAVORITE
-|--------------------------------------------------------------------------
-*/
 
 exports.addFavorite = async (req, res) => {
   try {
@@ -125,11 +104,6 @@ exports.addFavorite = async (req, res) => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| REMOVE FAVORITE
-|--------------------------------------------------------------------------
-*/
 
 exports.removeFavorite = async (req, res) => {
   try {
@@ -155,12 +129,6 @@ exports.removeFavorite = async (req, res) => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| GET FAVORITES
-|--------------------------------------------------------------------------
-*/
-
 exports.getFavorites = async (req, res) => {
   try {
 
@@ -175,12 +143,6 @@ exports.getFavorites = async (req, res) => {
     });
   }
 };
-
-/*
-|--------------------------------------------------------------------------
-| SAVE DESTINATION
-|--------------------------------------------------------------------------
-*/
 
 exports.saveDestination = async (req, res) => {
   try {
@@ -211,11 +173,6 @@ exports.saveDestination = async (req, res) => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| REMOVE SAVED
-|--------------------------------------------------------------------------
-*/
 
 exports.removeSavedDestination = async (req, res) => {
   try {
@@ -243,11 +200,6 @@ exports.removeSavedDestination = async (req, res) => {
   }
 };
 
-/*
-|--------------------------------------------------------------------------
-| GET SAVED DESTINATIONS
-|--------------------------------------------------------------------------
-*/
 
 exports.getSavedDestinations = async (req, res) => {
   try {

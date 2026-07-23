@@ -7,12 +7,6 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
-/*
-|--------------------------------------------------------------------------
-| AI Chat Assistant
-|--------------------------------------------------------------------------
-*/
-
 router.post("/guide", async (req, res) => {
   try {
     const { prompt } = req.body;
@@ -73,11 +67,6 @@ Do NOT generate JSON.
   }
 });
 
-/*
-|--------------------------------------------------------------------------
-| Generate Travel Itinerary
-|--------------------------------------------------------------------------
-*/
 
 router.post("/generate-itinerary", async (req, res) => {
   try {

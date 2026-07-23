@@ -3,16 +3,8 @@ const Destination = require("../models/Destination");
 const Itinerary = require("../models/Itinerary");
 const bcrypt = require("bcryptjs");
 
-/*
-|--------------------------------------------------------------------------
-| CREATE USER
-|--------------------------------------------------------------------------
-*/
-/*
-|--------------------------------------------------------------------------
-| UPDATE ADMIN PROFILE
-|--------------------------------------------------------------------------
-*/
+
+// | UPDATE ADMIN PROFILE
 
 exports.updateAdminProfile = async (req, res) => {
 
@@ -121,11 +113,6 @@ exports.getDestination = async (req, res) => {
 
 };
 
-/*
-|--------------------------------------------------------------------------
-| UPDATE DESTINATION
-|--------------------------------------------------------------------------
-*/
 
 exports.updateDestination = async (req, res) => {
 
@@ -176,11 +163,6 @@ exports.updateDestination = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| GET ALL USERS
-|--------------------------------------------------------------------------
-*/
 
 exports.getUsers = async (req, res) => {
 
@@ -203,11 +185,7 @@ exports.getUsers = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| GET SINGLE USER
-|--------------------------------------------------------------------------
-*/
+
 
 exports.getUser = async (req, res) => {
 
@@ -237,11 +215,6 @@ exports.getUser = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| DELETE USER
-|--------------------------------------------------------------------------
-*/
 
 exports.deleteUser = async (req, res) => {
 
@@ -273,11 +246,6 @@ exports.deleteUser = async (req, res) => {
 
 };
 
-/*
-|--------------------------------------------------------------------------
-| CREATE DESTINATION
-|--------------------------------------------------------------------------
-*/
 
 exports.createDestination = async (req, res) => {
   try {
@@ -325,16 +293,6 @@ exports.createDestination = async (req, res) => {
 
 }
 };
-/*
-|--------------------------------------------------------------------------
-| DELETE DESTINATION
-|--------------------------------------------------------------------------
-*/
-/*
-|--------------------------------------------------------------------------
-| UPDATE USER
-|--------------------------------------------------------------------------
-*/
 
 exports.updateUser = async (req, res) => {
 
@@ -369,11 +327,6 @@ exports.updateUser = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| GET ALL ITINERARIES
-|--------------------------------------------------------------------------
-*/
 
 exports.getItineraries = async (req, res) => {
 
@@ -397,11 +350,7 @@ exports.getItineraries = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| DELETE ITINERARY
-|--------------------------------------------------------------------------
-*/
+
 
 exports.deleteItinerary = async (req, res) => {
 
@@ -432,11 +381,6 @@ exports.deleteItinerary = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| GET SINGLE ITINERARY
-|--------------------------------------------------------------------------
-*/
 
 exports.getItinerary = async (req, res) => {
 
@@ -467,11 +411,6 @@ exports.getItinerary = async (req, res) => {
   }
 
 };
-/*
-|--------------------------------------------------------------------------
-| GET ADMIN PROFILE
-|--------------------------------------------------------------------------
-*/
 
 exports.getAdminProfile = async (req, res) => {
 
@@ -530,19 +469,13 @@ exports.deleteDestination = async (req, res) => {
 };
 exports.getDashboardStats = async (req, res) => {
   try {
-
+    // Cards
     const users = await User.countDocuments();
+    const destinations = await Destination.countDocuments();
+    const itineraries = await Itinerary.countDocuments();
 
-    const destinations =
-      await Destination.countDocuments();
-
-    const itineraries =
-      await Itinerary.countDocuments();
-
-    const favoriteUsers = await User.find(
-      {},
-      "favoriteDestinations"
-    );
+    // Favorites
+    const favoriteUsers = await User.find({}, "favoriteDestinations");
 
     let favorites = 0;
 
@@ -550,18 +483,69 @@ exports.getDashboardStats = async (req, res) => {
       favorites += user.favoriteDestinations.length;
     });
 
+    // Recent Users
+    const latestUsers = await User.find()
+      .select("name email createdAt")
+      .sort({ createdAt: -1 })
+      .limit(5);
+
+    // Recent Itineraries
+    const recentItineraries = await Itinerary.find()
+      .populate("user", "name")
+      .sort({ createdAt: -1 })
+      .limit(5);
+
+    // Popular Destinations
+    const popularDestinations = await Destination.find()
+      .select("name rating")
+      .sort({ rating: -1 })
+      .limit(5);
+
+    // Monthly User Growth
+    const monthlyUsers = await User.aggregate([
+      {
+        $group: {
+          _id: { $month: "$createdAt" },
+          total: { $sum: 1 },
+        },
+      },
+      {
+        $sort: { "_id": 1 },
+      },
+    ]);
+
+    // Destination Categories (based on tags)
+    const categoryMap = {};
+
+    const allDestinations = await Destination.find({}, "tags");
+
+    allDestinations.forEach((destination) => {
+      destination.tags.forEach((tag) => {
+        categoryMap[tag] = (categoryMap[tag] || 0) + 1;
+      });
+    });
+
+    const destinationCategories = Object.keys(categoryMap).map((key) => ({
+      name: key,
+      value: categoryMap[key],
+    }));
+
     res.json({
       users,
       destinations,
       itineraries,
       favorites,
+
+      latestUsers,
+      recentItineraries,
+      popularDestinations,
+      monthlyUsers,
+      destinationCategories,
     });
 
   } catch (error) {
-
     res.status(500).json({
       message: error.message,
     });
-
   }
 };

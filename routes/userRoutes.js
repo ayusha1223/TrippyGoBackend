@@ -16,12 +16,8 @@ const {
   getSavedDestinations,
 } = require("../controllers/userController");
 
-/*
-|--------------------------------------------------------------------------
-| Profile
-|--------------------------------------------------------------------------
-*/
 
+// | Profile
 router.get("/profile", protect, getProfile);
 
 router.put("/profile", protect, updateProfile);
@@ -32,12 +28,8 @@ router.post(
   uploadProfileImage
 );
 
-/*
-|--------------------------------------------------------------------------
-| Favorites
-|--------------------------------------------------------------------------
-*/
 
+// | Favorites
 // Get all favorites
 router.get("/favorites", protect, getFavorites);
 
@@ -47,11 +39,8 @@ router.post("/favorites/:id", protect, addFavorite);
 // Remove favorite
 router.delete("/favorites/:id", protect, removeFavorite);
 
-/*
-|--------------------------------------------------------------------------
-| Saved Destinations
-|--------------------------------------------------------------------------
-*/
+
+// | Saved Destinations
 
 // Get saved destinations
 router.get("/saved", protect, getSavedDestinations);

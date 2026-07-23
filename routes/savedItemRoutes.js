@@ -1,5 +1,5 @@
 const express = require("express");
-console.log("✅ savedItemRoutes loaded");
+console.log(" savedItemRoutes loaded");
 
 const router = express.Router();
 

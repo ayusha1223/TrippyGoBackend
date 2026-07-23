@@ -5,6 +5,8 @@ const jwt = require("jsonwebtoken");
 // Register User
 exports.registerUser = async (req, res) => {
   try {
+    console.log("=== REGISTER HIT ===");
+console.log(req.body);
     const { name, email, password } = req.body;
 
     // Check if user already exists
@@ -25,6 +27,10 @@ exports.registerUser = async (req, res) => {
       email,
       password: hashedPassword,
     });
+    console.log("Saved user:", user);
+
+const checkUser = await User.findOne({ email });
+console.log("Found immediately after save:", checkUser);
 
     // Generate token
     const token = jwt.sign(
